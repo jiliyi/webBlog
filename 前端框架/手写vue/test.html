@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+        你好，{{content}}
+        <span>{{description}}</span>
+    </div>
+    <script type="module">
+        import Vue from './core/index.js'
+        window.vm = new Vue({
+            el : 'test',
+            data : {
+                content : 'panda',
+                description : 'hello',
+                obj : {
+                    x : 'a',
+                    y : 'b'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
